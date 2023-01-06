@@ -98,13 +98,13 @@ p.sub-title{
 /* ------------------------Global Styles -------------------------*/
 
 
-/* ------------------------Header Styles -------------------------*/
+/* ------------------------Header/NavBar Styles -------------------------*/
 
 #header{
     display: flex;
     align-items:center;
     justify-content: space-between;
-    padding:20px;
+    padding:20px 40px;
     background: black;
     box-shadow: 0 5px 15px ;
 }
@@ -113,11 +113,17 @@ p.sub-title{
     display: flex;
     align-items: center;
     justify-content: center;
-    list-style: none;
+    
 }
 
+#navbar li{
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+}
+
+
 #navbar li a{
-    padding: 20px 30px;
     font-family: var(--Manrope);
     text-transform: uppercase;
     font-size: 13px;
@@ -126,9 +132,19 @@ p.sub-title{
     font-weight: 700;
     line-height: 25px;
     letter-spacing: 2px;
+    transition: 0.3s ease-in;
 }
 
-#navbar li a:hover{
-    text-decoration: underline;
+#navbar li a:hover, #navbar li a.active {
     color: #D87D4A;
+}
+
+#navbar li a.active::after, #navbar li a:hover::after{
+    content: "";
+    width: 25%;
+    height: 2px;
+    background: #D87D4A;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
