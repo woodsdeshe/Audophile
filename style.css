@@ -21,6 +21,7 @@ h1{
     line-height: 58px;
     letter-spacing: 2px;
     font-weight: bold;
+    color: white;
 }
 
 h2{
@@ -71,8 +72,7 @@ h6{
 p{
     font-family: var(--Manrope);
     font-size: 15px;
-    line-height: 25px;
-    font-weight:bold; 
+    line-height: 25px; 
 }
 
 
@@ -106,7 +106,7 @@ p.sub-title{
     justify-content: space-between;
     padding:20px 40px;
     background: black;
-    box-shadow: 0 5px 15px ;
+   
 }
 
 #navbar{
@@ -148,3 +148,31 @@ p.sub-title{
     bottom: -4px;
     left: 20px;
 }
+
+/* ------------------------Hero Styles -------------------------*/
+
+#hero{
+    background: black;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right;
+
+    box-sizing: border-box;
+
+}
+
+#new-product{
+    font-family: var(--Manrope);
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 19px;
+    letter-spacing: 10px;
+    color: white;
+}
+
+p{
+    color: #F1F1F1;
+}
+
